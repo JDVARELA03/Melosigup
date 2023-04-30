@@ -1,0 +1,166 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+   background-color: rgba(212, 212, 212, 0.285);
+}
+img{
+   width: 40px;
+   height: 40px;
+   border-radius: 80%;
+   transition: all 200ms ease;
+}
+img:hover{
+   transform:translateY(-4px);
+}
+.login-web{
+   width: 335px;
+   height: 440px;
+   max-width: 600px;
+   margin: 5% auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(255, 247, 247);
+   border-radius: 40px;
+   box-shadow: 0px 3px 40px grey;
+   transition: all 200ms ease;
+}
+.login-web:hover{
+   transform: translateY(-4px);
+   box-shadow: 9px 15px 30px rgb(27, 28, 52);
+ 
+}
+
+/*Definimos el titulo su posicion*/
+.title{
+   display: flex;
+   gap: 100px;
+   margin-top: -20px;
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Definimos nuestros inputs*/
+.username {
+   font-family: 'Segoe UI', sans-serif;
+   margin: 0em 0 1em -3em;
+   max-width: 190px;
+   position: relative;
+   margin-top: 40px;
+}
+
+.username input {
+   font-size: 100%;
+   padding: 0.9em;
+   outline: none;
+   border: 2px solid rgb(200, 200, 200);
+   background-color: transparent;
+   border-radius: 20px;
+   width: 210px;
+ }
+ .username  label {
+   font-size: 18px;
+   position: absolute;
+   top: -2px;
+   left: 0;
+   padding: 0.8em;
+   margin-left: 0.5em;
+   pointer-events: none;
+   transition: all 0.3s ease;
+   color: rgb(100, 100, 100);
+ }
+ .username :is(input:focus, input:valid)~label {
+   transform: translateY(-50%) scale(.9);
+   margin: 0em;
+   margin-left: 0.5em;
+   padding: 0.4em;
+   background-color:rgb(255, 247, 247);
+   
+ }
+ .username :is(input:focus, input:valid) {
+   border-color: rgb(110, 110, 136);
+   box-shadow: 12px 12px 8px rgb(201, 201, 201);
+ }
+ .password{
+   font-family: 'Segoe UI', sans-serif;
+   margin: 0em 0 1em -3em;
+   max-width: 190px;
+   position: relative;
+}
+.password input {
+   font-size: 100%;
+   padding: 0.9em;
+   outline: none;
+   border: 2px solid rgb(200, 200, 200);
+   background-color: transparent;
+   border-radius: 20px;
+   width: 210px;
+ }
+ .password label {
+   font-size: 18px;
+   position: absolute;
+   top: -2px;
+   left: 0;
+   padding: 0.8em;
+   margin-left: 0.5em;
+   pointer-events: none;
+   transition: all 0.3s ease;
+   color: rgb(100, 100, 100);
+ }
+ .password :is(input:focus, input:valid)~label {
+   transform: translateY(-50%) scale(.9);
+   margin: 0em;
+   margin-left: 0.5em;
+   padding: 0.2em;
+   background-color:rgb(255, 247, 247);
+ }
+ .password :is(input:focus, input:valid) {
+   border-color: rgb(110, 110, 136);
+   box-shadow: 12px 12px 8px rgb(201, 201, 201);
+ }
+ .passwordlost{
+   justify-content: flex-start;
+   text-align: left;
+  margin: 1px 0 10px -80px;
+ }
+ .passwordlost a{
+   text-decoration: none;
+   color: rgb(82, 82, 82);
+   font-size: 16px;
+ }
+ .passwordlost a:hover{
+   text-decoration: underline;
+ }
+ .button{
+   margin: 10px 0px 15px 0px;
+ }
+ .button button{
+   padding: 12px 50px;
+   border-radius: 30px;
+   border:1px solid grey;
+   background-color: transparent;
+   font-size: 16px;
+   transition: all 300ms ease;
+ }
+ .button button:hover{
+   background-color: rgb(218, 206, 192);
+   border-color: rgb(215, 215, 190);
+   box-shadow: 8px 9px 12px grey;
+   transform: translateY(-5%);
+ }
+ .signup{
+    margin: 5px 0;
+  color: #363535;
+  font-size: 17px;
+ }
+ .signup a{
+   text-decoration: none;
+   color: rgb(1, 18, 255);
+   font-size: 16px;
+ }
+ .signup a:hover{
+   text-decoration:underline ;
+ }
